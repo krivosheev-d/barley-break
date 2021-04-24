@@ -1,0 +1,150 @@
+body {
+  display: flex;
+  height: 90vh;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.field {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  max-width: 300px;
+  max-height: 300px;
+  width: 80vw;
+  height: 80vw;
+  border: 1px solid black;
+  border-radius: 0.6em;
+}
+
+.info {
+  display: flex;
+  justify-content: center;
+  padding: 1em;
+  margin: 1em 0;
+  background-color: #ffee008c;
+  border-radius: 0.6em;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.field-point {
+  display: flex;
+  border: 1px solid darkslategray;
+  border-radius: 10%;
+  width: 21%;
+  height: 21%;
+  font-size: 2rem;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  animation: fade-in ease-in forwards 0.4s;
+}
+
+.field-point.point--empty {
+  animation: fade-out ease-in forwards 0.4s;
+  border: 1px solid transparent;
+  color: transparent;
+  cursor: default;
+}
+
+@media screen and (min-width: 240px) {
+  .point {
+    font-size: 24pt;
+  }
+}
+
+@keyframes fade-out {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.brown {
+  background: #770000;
+  color: wheat;
+}
+
+.light-brown {
+  background: brown;
+  color: wheat;
+}
+
+.light-green {
+  background: #00bd00;
+  color: #083031;
+}
+
+.light-blue {
+  background: #3f3ff1;
+  color: #0f0f2d;
+}
+
+.orange {
+  background: orange;
+  color: #e21818;
+}
+
+.violet {
+  background: blueviolet;
+  color: #fdf3e2;
+}
+
+.dark-khaki {
+  background: darkkhaki;
+  color: darkgreen;
+}
+
+.aquamarine {
+  background: aquamarine;
+  color: #0a0233;
+}
+
+.darkpink {
+  background: crimson;
+  color: bisque;
+}
+
+.deeppink {
+  background: deeppink;
+  color: white;
+}
+
+.lemon {
+  background: greenyellow;
+  color: #050444;
+}
+
+.darkslateblue {
+  background: darkslateblue;
+  color: antiquewhite;
+}
+
+.salad {
+  background: chartreuse;
+  color: #040444;
+}
+
+.orangered {
+  background: orangered;
+  color: wheat;
+}
+
+.springgreen {
+  background: springgreen;
+  color: #02023a;
+}
